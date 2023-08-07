@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="page_container">
+        <header>
+            <section class="header_content">
+                <!-- Logo Box -->
+                <section class="logo_box">
+                    <i class="logo_box_icon fa-solid fa-cat"></i>
+                    <h1 class="logo_box_brand">
+                        Miêu Store
+                    </h1>
+                </section>
+                <!-- Global Navigation -->
+                <section class="navbar">
+        
+                </section>
+                <!--User box -->
+                <section class="user_box">
+
+                </section>
+            </section>
+        </header>
+        <section class="body_container">
+            <div class="body_container_content">
+                <div id="table_user"></div>
+                <form onsubmit="addUser(event)">
+                    <div>
+                        Name: <input id="nameabc" name="name" type="text">
+                    </div>
+                    <div>
+                        Address: <input name="address" type="text">
+                    </div>
+                    <button type="submit">Thêm</button>
+                </form>
+                <form id="update_form" onsubmit="saveUser(event)">
+                    <input hidden class="update_form_id" name="id" type="text">
+                    <div>
+                        Name: <input class="update_form_name" name="name" type="text">
+                    </div>
+                    <div>
+                        Address: <input class="update_form_address" name="address" type="text">
+                    </div>
+                    <button type="submit">Lưu</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            Đây là footer
+        </footer>
+    </div>
+    <div id="loading">
+        <img class="loading_icon" src="./cat_running.gif">
+    </div>
+    <!-- Script -->
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
