@@ -61,9 +61,11 @@ header {
 
 .body_container {
     width: 100%;
-    height: 100vh;
+    height: 30vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body_container_content {

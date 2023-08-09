@@ -17,6 +17,10 @@
                     <i class="logo_box_icon fa-solid fa-cat"></i>
                     <h1 class="logo_box_brand">
                         Miêu Store
+                        <!-- <audio id="mp3Tag" preload="auto" controls autoplay>
+                            <source src="1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio> -->
                     </h1>
                 </section>
                 <!-- Global Navigation -->
@@ -25,7 +29,10 @@
                 </section>
                 <!--User box -->
                 <section class="user_box">
-
+                    <span id="email_display">abc.com</span>
+                    <img id="avatar_display" src="" style="width: 50px; height: 50px; border-radius: 50%;">
+                    <button id="btn_logout" onclick="logout()" class="btn btn-danger">Logout</button>
+                    <a href="./pages/login.html" id="btn_login" class="btn btn-primary">Login</a>
                 </section>
             </section>
         </header>
@@ -51,6 +58,18 @@
                     </div>
                     <button type="submit">Lưu</button>
                 </form>
+            </div>
+            <!-- Ở đây -->
+            <a href="./pages/catogry.html?category_id=1">Laptop</a>
+            <a href="./pages/catogry.html?category_id=2">PC</a>
+            <a href="./pages/catogry.html?category_id=3">MB</a>
+            <div id="product_ul">
+                <!-- <ul>
+                    <li>
+                        <div>Laptop 1</div>
+                        <div>1</div>
+                    </li>
+                </ul> -->
             </div>
         </section>
         <footer>

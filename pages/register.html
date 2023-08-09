@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+    <h1>Register Page</h1>
+    <!-- onsubmit="register(event)" -->
+    <form id="form_register" onsubmit="register(event)">
+        <div>
+             email: <input name="email" required  type="text">
+        </div>
+        <div>
+            password: <input name="password" type="password">
+       </div>
+       <div>
+            password confirm: <input  name="password_confirm" type="password">
+        </div>
+        <div>
+            phone number: <input name="phone_number"  type="text">
+        </div>
+        <div>
+            address: <input name="address" type="text">
+        </div>
+        <div>
+            avatar: <input name="avatar" type="text">
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- <form action="https://www.google.com/search" method="get">
+        <input name="q" type="text" placeholder="search string">
+        <button type="submit">Tìm kiếm</button>
+    </form> -->
+    <script src="../register.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="product_ul">
+        <!-- <ul>
+            <li>
+                <div>Laptop 1</div>
+                <div>1</div>
+            </li>
+        </ul> -->
+    </div>
+    <script>
+        /* Lấy query prams từ url */
+    let url = new URL(window.location.href);
+    let queryParams = new URLSearchParams(url.search);
+    let category_id = queryParams.get("category_id"); 
+    // console.log("🚀 ~ file: catogry.html:21 ~ category_id:", category_id)
+
+        function renderProducts() {
+            let products = JSON.parse(localStorage.getItem("products"));
+            let liString = ``;
+            for (let i in products) {
+                if(products[i].category_id == category_id) {
+                    liString += `
+                    <li>
+                        <div>${products[i].name}</div>
+                        <div>${products[i].category_id}</div>
+                    </li>
+                `
+                }
+            }
+
+            let htmlString = `
+                <ul>
+                    ${liString}
+                </ul>
+            `
+
+            document.getElementById("product_ul").innerHTML = htmlString;
+        }
+
+        renderProducts();
+    </script>
+</body>
+</html>
